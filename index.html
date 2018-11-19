@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title > Nike site </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href = "style.css">
+    </head>
+    <body>
+        <div class="wrapper" >
+            <div class= "content">
+                <div class="header">
+                    <div class="menu"><p>&#9776;</p></div>
+                    <div class="bar">
+                        <div>Check Out</div>
+                        <div>Favourites</div>
+                        <div>Collections</div>
+                    </div>
+                    <div class="backet"><p>&#9742;</p></div>
+                </div>
+                <div class="main-content">
+                    <ul class="image">
+                        <li class = "slide"><img src = "shoes.png"></li>
+                        <li><img src = "shoes.png"></li>
+                        <li><img src = "shoes.png"></li>
+                    </ul>
+                    <button class="add-element">+</button>
+                    <ul class="description">
+                    <li class="slide">
+                            <div class="name">Nike New Max 2018</div>
+                            <div class="features">Men's Running Shoes</div>
+                            <div class ="price">$ 150</div>
+                        </li>
+                        <li>
+                            <div class="name">Nike Air  2018</div>
+                            <div class="features">Men's Running Shoes</div>
+                            <div class ="price">$ 230</div>
+                        </li>
+                        <li>
+                            <div class="name">Nike Vapor Zoom 2015</div>
+                            <div class="features">Men's Running Shoes</div>
+                            <div class ="price">$ 400</div>
+                        </li>
+                    </ul>
+                    <div class="left-tr"></div>
+                    <div class ="right-tr"></div>
+                    <div class="buttons">
+                        <button id = "0" class = "slide" onclick="changeSlide(0)"></button>
+                        <button id = "1" onclick="changeSlide(1)"></button>
+                        <button id = "2" onclick="changeSlide(2)"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="slider.js"></script>
+    </body>
+</html>

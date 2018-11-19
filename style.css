@@ -1,0 +1,295 @@
+body{
+    background: url(./plain.png);
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
+
+.wrapper{
+    background: url(./background.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 0;
+    padding-top:20px;
+}
+
+.content{
+    position:relative;
+    margin:auto;
+    height:300px;
+    width:450px;
+    border-radius: 15px;
+}
+
+.content{
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(238, 34, 34);
+    padding-top:20px;
+    z-index:2;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.header {
+    margin-left:20px;
+    margin-right:20px;
+    display:flex;
+    padding:none;
+    justify-content: space-between;
+    height:50px;
+}
+
+.menu {
+    display:inline-block;
+    margin-left:5px;
+}
+
+.bar {
+    display:inline-flex;
+    width:320px;
+    justify-content:space-between;
+    background-color: white;
+    border-radius:20px 20px 20px 20px;
+    color:red;
+}
+
+.bar div{
+    display:inline-block;
+    font-size:18px;
+    margin:auto;
+}
+
+.bar div :hover {
+    color:black;
+}
+
+.main-content{
+    position:absolute;
+    margin-top:20px;
+    margin-left:0;
+    margin-right:0;
+    padding:0;
+    width:450px;
+    height:470px;
+    background-color: rgb(238, 34, 34);
+}
+
+
+.main-content > .image > li {
+    display:none;
+    list-style: none;
+}
+
+.main-content > .image {
+    background-image: url(nike.png);
+    background-size: cover;
+    height: 300px;
+    margin-top:-15px;
+    margin-left:-31px;
+    margin-right: -30px;
+    margin-bottom: -25px;
+}
+
+.main-content > .image > .slide {
+    display:block;
+    margin-bottom:-20px;
+}
+
+.slide > img {
+    position:absolute;
+    height:450px;
+    z-index:0;
+    bottom:125px;
+    right:-15%;
+}
+
+ul {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+
+.main-content > .description {
+    position:relative;
+    width:110%;
+    right:5%;
+    z-index:1;
+    text-align:center;
+}
+
+
+.main-content > .description > li {
+    display:none;
+}
+
+.main-content > .description > .slide {
+    margin-top:20px;
+    display:block;
+    background-color:white;
+    height:130px;
+}
+
+button {
+    border-radius: 50%;
+    background-color: white;
+    border:0;
+    font-size:20px;
+    font-style:bold;        background-image:url(nike.png);
+}
+
+.add-element {
+    position:absolute;
+    display:block;
+    right:45%;
+    top:56%;
+    width:25px;
+    z-index: 2;
+}
+
+.slide > .name {
+    font-size:26px;
+    padding-top:30px;
+}
+
+.slide > .features {
+    font-size:18px;
+    color:grey;
+}
+
+.slide > .price {
+    padding-top:5px;
+    font-size:26px;
+}
+
+
+.left-tr {
+    display:block;
+    width:10%;
+    height:40px;
+    margin-top:-20px;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image:url(./left-tr.png);
+    position: absolute;
+    left:-5%;
+    
+}
+
+.right-tr {
+    display:block;
+    width:10%;
+    height: 40px;
+    margin-top:-20px;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image:url(./tr.png);
+    position: absolute;
+    right:-5%;
+}
+
+
+
+.buttons {
+    margin-top:25px;
+    margin-left:150px;
+    margin-right:150px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.buttons > button {
+    border-radius: 50%;
+    width:10px;
+    height: 10px;
+    background-color: white;
+    border:0;
+    font-size:20px;
+    font-style:bold;
+}
+
+.buttons > .slide {
+    background-color: black;
+}
+
+.slide {
+    transition: all 0.2s linear 0.1s;
+}
+
+@media(max-width:450px) {
+
+    body{
+        background: url(./plain.png);
+        background-repeat: no-repeat;
+        overflow:hidden;
+    }
+    
+    .wrapper{
+        background: url(./background.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 60vw;
+        z-index: 0;
+        padding-top:20px;
+    }
+
+    .content{
+        width:100%;
+        height:145vw;
+        min-height: 500px;
+    }
+
+
+    .bar {
+        display:none;
+    }
+
+    .main-content {
+        width:100%;
+        height: 150vw;
+        position:relative;
+    }
+
+    .main-content > .image {
+        margin-top:-30px;
+        margin-right:-50px;
+        margin-left:0;
+        width:100%;
+        height:100vw;
+        background-position:center;
+    }
+
+    .slide > img{
+        display:block;
+        max-width: 150%;
+        height:auto;
+        position:relative;
+        bottom:50%;
+        right:35%;
+    }
+
+    .add-element {
+        position:absolute;
+        display:block;
+        top:95vw;
+        width:25px;
+        z-index: 2;
+    }
+
+    .buttons {
+        display:block;
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+        margin-left:0;
+        margin-right:0;
+        margin-top:15px;
+    }
+
+    .buttons > button {
+        display:block;
+        margin:0 12px;
+    }
+}
